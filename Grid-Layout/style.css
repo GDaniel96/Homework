@@ -1,0 +1,115 @@
+.container-main {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10rem;
+}
+
+.menu>button {
+    background-color: #307CC9;
+    border: none;
+    border-radius: 10%;
+    padding: 1rem;
+}
+
+.menu>button:hover {
+    opacity: .75;
+    cursor: pointer;
+}
+
+.text-image {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background: url(image-test.jpg);
+    background-size: cover;
+    padding: 3%;
+    border-radius: 2%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    background-color: rgba(127, 175, 224, 0.8);
+    justify-self: center;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.todays-tech {
+    display: flex;
+    justify-self: flex-end;
+    align-self: flex-end;
+    grid-column: 3 /4;
+    background-color: rgba(127, 175, 224, 0.8);
+    border-radius: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    gap: 10px;
+    max-width: 100%;
+}
+
+.cards img {
+    max-width: 240px;
+    align-self: center;
+}
+
+.cards div {
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.content-text {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.content img {
+    max-height: 200px;
+}
+
+.links {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto;
+    place-content: center;
+}
+
+.footer-images img {
+    max-width: 174px;
+    padding: 2px;
+    border: 2px solid black;
+}
+
+.final-footer {
+    place-content: start;
+}
