@@ -1,0 +1,93 @@
+/* Main container used with CSS Grid*/
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(7, 10%);
+    background-color: #142d4c;
+    z-index: -1;
+}
+/*Image styling*/
+.photo img {
+    border-radius: 15px;
+}
+
+.photo {
+    padding-top: 60px;
+    border-radius: 15px;
+    grid-column: 5 / 8;
+    grid-row: 1 / span 3;
+    z-index: 1;
+}
+/*Contact us form properties*/
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    grid-column: 3 / span 3;
+    grid-row: 3 / span 4;
+    background-color: #f5fdff;
+    box-shadow: 10px 10px 50px black;
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.form input {
+    background-color: #f5fdff;
+}
+
+.form textarea {
+    background-color: #f5fdff;
+}
+
+.form h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.form input {
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    outline: none;
+}
+
+.form textarea {
+    border-top-style: none;
+    border-right-style: none;
+    border-left-style: none;
+    outline: none;
+    resize: none;
+}
+/*Background properties*/
+.background {
+    display: flex;
+    flex-direction: row;
+    background-color: #0c8282;
+    grid-row: 4 / 6;
+    grid-column: 1 / 11;
+    z-index: 0;
+}
+/*Button styling and properties*/
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button button {
+    padding: 15px;
+    border: 1px solid black;
+    color: white;
+    font-size: 15px;
+    background-color: black;
+    border-radius: 15px;
+    transition: all;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.button button:hover {
+    opacity: 50%;
+}
