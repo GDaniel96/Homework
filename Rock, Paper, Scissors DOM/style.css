@@ -1,0 +1,51 @@
+body {
+    background-color: #e3e3e3;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+
+}
+
+.selection {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: .3s;
+    margin-top: 10rem;
+    
+}
+
+.selection:hover {
+    background-color: #9cd3d3;
+    transform: scale(1.2)
+}
+
+.score {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    margin-top: 1rem;
+    font-family: "Rubik";
+    font-size: 50px;
+ }
+
+.score span {
+    color: #596e79;
+    
+}
+
+.win {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Rubik";
+    font-size: 50px;
+    margin-top: 2rem;
+}

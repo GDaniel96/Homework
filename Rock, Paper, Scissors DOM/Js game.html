@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="description" content="Javascript rock, paper, scissors">
+    <meta name="author" content="Caciulita George Daniel">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <title> Rock, Paper, Scissors </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rajdhani:wght@300;400&family=Rubik&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="selections" id="select-option">
+        <button class="selection" id="rock"><img src="rock.png" width="200px"></button>
+        <button class="selection" id="paper"><img src="paper.png" width="200px"></button>
+        <button class="selection" id="scissors"><img src="scissors.png" width="200px"></button>
+    </div>
+
+    <div class="score">
+        <div>
+            User:
+            <span id="user-score">0</span>
+        </div>
+        <div>
+            Computer:
+            <span id="computer-score">0</span>
+        </div>
+    </div>
+    <div class="win">
+        <p id="winner"> Chose an option. </p>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
