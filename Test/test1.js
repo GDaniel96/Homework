@@ -1,0 +1,1 @@
+document.getElementById("test").innerText = "This is a test";
