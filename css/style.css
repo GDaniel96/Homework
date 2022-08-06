@@ -1,0 +1,64 @@
+body,
+html {
+    height: 100%;
+    background-image: url(/img/background1.jpg);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    max-width: 350px;
+    width: 100%;
+    background-color: rgba(55, 57, 61, 0.8);
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.searchForm>form {
+    display: flex;
+    gap: .5em;
+}
+
+.button {
+    background-color: rgba(127, 132, 148, .2);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: ease-in-out;
+    transition-duration: 0, 2s;
+}
+
+.information {
+    text-transform: capitalize;
+    font-size: 1.5em;
+}
+
+.input {
+    outline: none;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(127, 132, 148, .2);
+    border: none;
+    width: 100%;
+    border-radius: 20px;
+    padding-left: 5%;
+}
+
+.input:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: ease-in-out;
+    transition-duration: 0, 2s;
+}
+
+.input::placeholder {
+    color: white;
+}
